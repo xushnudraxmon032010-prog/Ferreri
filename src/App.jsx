@@ -1,21 +1,25 @@
 import React from 'react'
-<<<<<<< HEAD
+import { Routes, Route } from 'react-router-dom'
 import Company from './pages/Company'
+import Footer from './components/Footer'
+import SocialMedia from './components/SocialMedia'
+import Social2 from './components/Social2'
+import MiniIcon from './components/MiniIcon'
 
 const App = () => {
   return (
-   <Company />
-=======
-import { Route, Router, Routes } from 'react-router-dom'
-
-const App = () => {
-  return (
-    <div>
-      <Routes>
-        <Route/>
-      </Routes>
-    </div>
->>>>>>> 2f68dec431fa0203526aa97121916bbe8fd75401
+    <Routes>
+      <Route path="/" element={
+          <>
+            <Company />
+            <Footer />
+            <SocialMedia />
+            <Social2 />
+            <MiniIcon />
+          </>
+        }
+      />
+    </Routes>
   )
 }
 
